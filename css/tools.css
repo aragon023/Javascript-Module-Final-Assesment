@@ -18,13 +18,48 @@
   --color-dark-blue: #023047;    
 }
     
+/* Intro Tools*/
+.intro-tools {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto;
+}
 
+.intro-tools h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color:var(--color-dark-blue);
+}
 
-    h1 {
-      text-align: center;
-      color: var(--color-blue);
-    }
+.tools p {
+  font-size: 1.125rem;
+  color: var(--color-grey-medium);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
 
+.intro-tools-image {
+  margin-top: 2rem;
+}
+
+.intro-tools-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Tools Grid */
+
+.tools-container {
+  padding: 4rem 2rem;
+  background-color: var(--color-white);
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+   
     .filter-bar {
       display: flex;
       flex-wrap: wrap;
@@ -98,7 +133,7 @@
       cursor: pointer;
     }
 
-  .modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 999;

@@ -1,7 +1,3 @@
-@import url("index.css");
-@import url("about.css");
-@import url("tools.css");
-@import url("contact.css");
 
 
 /* Colour Scheme */
@@ -38,18 +34,17 @@ body {
 .body-container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 20px;
+  background-color: var(--color-white);
 }
 
 header {
   background-color: var(--color-grey-dark);
-  height: 120px;            /* Set your desired height */
-  padding: 0 20px;         /* Horizontal padding only */
-  position: sticky;
+  height: 120px;            
+  padding: 0 20px;         
   top: 0;
   z-index: 1000;
-  display: flex;           /* Ensures contents align nicely */
-  align-items: center;     /* Vertically center content */
+  display: flex;           
+  align-items: center;     
   justify-content: space-between;
 }
 
@@ -129,7 +124,6 @@ background-color: var(--color-yellow-light);
 
 .homepage-articles{
   gap: 2rem;
-  background-color: var(--color-white);
   padding: 50px;
 }
 
@@ -175,7 +169,7 @@ background-color: var(--color-yellow-light);
   display: block; 
   width: 100%;
   height: 250px;
-  object-fit: cover; /* Ensures image fills area without stretching */
+  object-fit: cover; 
   margin: 0;
   padding: 0;
   border-radius: 0; 
