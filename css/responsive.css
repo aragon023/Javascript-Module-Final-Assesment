@@ -1,0 +1,32 @@
+/* Responsive Styles */
+@media (max-width: 860px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-btn {
+    display: none;
+  }
+}

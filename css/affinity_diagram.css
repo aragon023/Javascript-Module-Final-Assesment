@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#clustersContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.cluster {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  position: relative;
+  min-height: 150px;
+}
+
+.cluster-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cluster input {
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  background: none;
+  font-weight: bold;
+}
+
+.cluster input:focus {
+  outline: none;
+}
+
+.delete-cluster {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: red;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.note {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: #000;
+  cursor: grab;
+  position: relative;
+}
+
+.note textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  resize: none;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.note textarea:focus {
+  outline: none;
+}
+
+.note .delete-note {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: red;
+  font-size: 1rem;
+  cursor: pointer;
+}

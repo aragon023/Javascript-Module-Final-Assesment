@@ -1,0 +1,76 @@
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Innovation, Technology, Design and Business Strategy">
+        <meta name="keywords" content="Portfolio, Innovation, Technology, Design, Business, Strategy">
+        <meta name="author" content="Mauricio Aragon">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+        <title>Holisk | Innovation + Business + Technology</title>
+        <link rel="stylesheet" href="./css/main.css">
+         <link rel="stylesheet" href="./css/responsive.css">
+         <link rel="stylesheet" href="./css/tools.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="./javascript/navigation.js" defer></script>
+        <script src="./javascript/tools.js" defer></script>
+        <script src="./javascript/articles.js" defer></script>
+    </head>
+   <body>
+        <div class="body-container">
+            <!-- Navigation -->
+            <header>
+              <div class="nav-container">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="./images/holisk_logo_negative.webp" alt="Holisk Logo">
+                  </a>
+                </div>
+
+                <nav>
+                  <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/articles.html">Articles</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li class="mobile-cta"><a href="#contact" class="cta-btn">Get in touch</a></li>
+                  </ul>
+                </nav>
+                
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger">
+                  <span class = "bar"></span>
+                  <span class = "bar"></span>
+                  <span class = "bar"></span>
+                </div>
+              </div>
+          </header>
+
+  <h1>Innovation Toolkit</h1>
+
+  <div class="filter-bar">
+    <button onclick="filterCards('All')">All</button>
+    <button onclick="filterCards('Empathy')">Empathy</button>
+    <button onclick="filterCards('Strategy')">Strategy</button>
+    <button onclick="filterCards('Planning')">Planning</button>
+    <button onclick="filterCards('Problem Solving')">Problem Solving</button>
+  </div>
+
+  <div class="grid" id="toolGrid"></div>
+
+  <!-- Modal -->
+<div id="toolModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <img id="modalImage" src="" alt="">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <div id="modalTags" class="tags"></div>
+  </div>
+</div>
+
+
+  </div>
+</body>
+</html>
