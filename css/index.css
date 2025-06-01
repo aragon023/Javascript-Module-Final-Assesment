@@ -271,31 +271,3 @@ button.know-more {
 }
 
 
-/* Footer */
-footer {
-  background: var(--color-grey-dark);
-  color: var(--color-white);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 2rem 1rem;
-}
-
-.footer img {
-    height: auto;
-    width: 150px;
-    padding: 10px;
-}
-
-footer ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.footer-links a {
-  font-size: 1rem;
-  color: var(--color-white);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}

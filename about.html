@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +9,16 @@
         <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
         <title>Holisk | Innovation + Business + Technology</title>
         <link rel="stylesheet" href="./css/main.css">
-         <link rel="stylesheet" href="./css/responsive.css">
-         <link rel="stylesheet" href="./css/tools.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="./javascript/navigation.js" defer></script>
-        <script src="./javascript/tools.js" defer></script>
+        <script src="./javascript/carousel.js" defer></script>
         <script src="./javascript/articles.js" defer></script>
     </head>
-   <body>
+    <body>
         <div class="body-container">
             <!-- Navigation -->
             <header>
@@ -27,7 +29,7 @@
                   </a>
                 </div>
 
-               <nav>
+              <nav>
                   <ul class="nav-links">
                     <li><a href="about.html">About</a></li>
                     <li><a href="articles.html">Articles</a></li>
@@ -36,7 +38,7 @@
                   </ul>
                 </nav>
 
-                <a href="#contact" class="cta-btn">Get in touch</a>
+                <a href="contact.html" class="cta-btn">Get in touch</a>
                 
 
                 <!-- Hamburger Menu -->
@@ -48,40 +50,7 @@
               </div>
           </header>
 
-  <!-- Intro Tools -->
-<section class="intro-tools">
-  <h1>Toolkit</h1>
-  <p>Check some of our practical tools and frameworks.</p>
-  <div class="intro-tools-image">
-    <img src="./images/home/toolkit.jpg" alt="toolkit">
-  </div>
-</section>
-
-  <!-- Tools Grid -->
-  <div class="tools-container">
-  <div class="filter-bar">
-    <button onclick="filterCards('All')">All</button>
-    <button onclick="filterCards('Empathy')">Empathy</button>
-    <button onclick="filterCards('Strategy')">Strategy</button>
-    <button onclick="filterCards('Planning')">Planning</button>
-    <button onclick="filterCards('Problem Solving')">Problem Solving</button>
-  </div>
-
-  <div class="grid" id="toolGrid"></div>
-
-  <!-- Modal -->
-<div id="toolModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <img id="modalImage" src="" alt="">
-    <h2 id="modalTitle"></h2>
-    <p id="modalDescription"></p>
-    <div id="modalTags" class="tags"></div>
-  </div>
-</div>
-
-
-  <!-- Footer -->
+            <!-- Footer -->
   <footer class="footer">
       <div class="footer-logo">
                   <a href="index.html">
