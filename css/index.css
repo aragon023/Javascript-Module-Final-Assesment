@@ -122,8 +122,9 @@
 /* Featured Articles */
 
 .homepage-articles {
- font-size: 1rem;
  background-color: var(--color-grey-light);
+ padding: 50px;
+ font-size: 1rem;
 }
 
 .homepage-articles h2 {
@@ -205,6 +206,7 @@
   border-radius: 20px;
   font-size: 0.8rem;
   color: var(--color-white);
+  background-color: var(--color-blue-light);
 }
 
 .project-description {
