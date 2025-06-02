@@ -17,19 +17,35 @@
   --color-blue: #009bdd;     
   --color-dark-blue: #023047;    
 }
+
+/* Banner*/
+.banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 300px; 
+}
+
     
 /* Intro Tools*/
 .intro-tools {
-  padding: 4rem 2rem;
-  text-align: center;
-  border-radius: 12px;
+  padding: 50px;
+  text-align: left;
   margin: 0 auto;
+  background-color: var(--color-white);
 }
 
 .intro-tools h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color:var(--color-dark-blue);
+  color:var(--color-blue);
 }
 
 .tools p {
@@ -40,23 +56,12 @@
   line-height: 1.6;
 }
 
-.intro-tools-image {
-  margin-top: 2rem;
-}
-
-.intro-tools-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 /* Tools Grid */
 
 .tools-container {
-  padding: 4rem 2rem;
-  background-color: var(--color-white);
+  padding: 50px;
+  background-color: var(--color-grey-light);
   text-align: center;
-  border-radius: 12px;
   margin: 0 auto;
 }
    
@@ -103,69 +108,79 @@
 
     .tags {
       margin: 10px 0;
+      color: var(--color-grey-dark);
     }
 
     .tags span {
-      background: var(--color-blue);
-      border-radius: 4px;
+      background: var(--color-white);
+      border-radius: 10px;
       padding: 5px 10px;
-      font-size: 12px;
+      font-size: 0.8rem;
       margin-right: 5px;
     }
 
-    .note-section {
-      margin-top: 10px;
-    }
 
-    .note-section textarea {
+/* Modal Section -- Provides styling for the cards once you click on them */
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
       width: 100%;
-      height: 60px;
-      padding: 10px;
-      margin-bottom: 5px;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(255, 255, 255, 0.6);
     }
 
-    .note-section button {
-      padding: 8px 12px;
-      background: #28a745;
-      color: white;
-      border: none;
-      border-radius: 4px;
+    .modal-content {
+      background-color: var(--color-dark-blue);
+      margin: 5% auto;
+      padding: 2rem;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      color: var(--color-white);
+      text-align: left;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 1rem;
+      right: 1.2rem;
+      font-size: 2rem;
       cursor: pointer;
     }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.6);
+/* Modal Section -- Provides styling for the modal once it opens*/
+.tool-steps {
+  margin-top: 1rem;
+  background: #f3f3f3;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
 }
 
-.modal-content {
-  background-color: rgb(149, 25, 25);
-  margin: 5% auto;
-  padding: 2rem;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
-  position: relative;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+.tool-steps h4 {
+  margin-bottom: 0.5rem;
+  color: #0057b7;
 }
 
-.modal-content img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+.tool-steps ol {
+  padding-left: 1.2rem;
 }
 
-.close-button {
-  position: absolute;
-  top: 1rem;
-  right: 1.2rem;
-  font-size: 1.5rem;
-  cursor: pointer;
+.tool-steps li {
+  margin-bottom: 0.5rem;
 }

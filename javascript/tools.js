@@ -1,6 +1,5 @@
-
-    const tools = [
-       {
+const tools = [
+  {
     title: 'Empathy Map',
     image: 'images/tools/empathy_mapping.jpg',
     tags: ['Empathy'],
@@ -18,14 +17,14 @@
     title: '5 Whys',
     image: 'images/tools/affinity_diagram.jpg',
     tags: ['Planning'],
-    description: 'Group ideas into clusters to find patterns.',
-    details: 'Affinity diagramming helps organize ideas, data, and insights by grouping them into meaningful categories or clusters. It’s used to uncover relationships between concepts and is especially useful during brainstorming or synthesis phases.'
+    description: 'Explore root causes by asking "why" repeatedly.',
+    details: 'The 5 Whys technique is a problem-solving method used to identify the root cause of a problem. By asking "Why?" five times (or more), you uncover deeper insights that help guide corrective action.'
   },
-    ];
+];
 
-    const grid = document.getElementById('toolGrid');
+const grid = document.getElementById('toolGrid');
 
-    function renderCards(filter = 'All') {
+function renderCards(filter = 'All') {
   grid.innerHTML = '';
   tools.forEach(tool => {
     if (filter === 'All' || tool.tags.includes(filter)) {
@@ -36,10 +35,6 @@
         <h3>${tool.title}</h3>
         <p>${tool.description}</p>
         <div class="tags">${tool.tags.map(tag => `<span>${tag}</span>`).join(' ')}</div>
-        <div class="note-section">
-          <textarea placeholder="Take notes..."></textarea>
-          <button onclick="exportNote(this, '${tool.title}')">Export Note</button>
-        </div>
       `;
       card.addEventListener('click', () => showModal(tool));
       grid.appendChild(card);
@@ -47,19 +42,63 @@
   });
 }
 
+function filterCards(tag) {
+  renderCards(tag);
+}
 
-    function filterCards(tag) {
-      renderCards(tag);
-    }
-
-    function showModal(tool) {
+function showModal(tool) {
   document.getElementById('modalImage').src = tool.image;
   document.getElementById('modalTitle').innerText = tool.title;
   document.getElementById('modalDescription').innerText = tool.details || tool.description;
   document.getElementById('modalTags').innerHTML = tool.tags.map(tag => `<span>${tag}</span>`).join(' ');
+
+  const modalExtra = document.getElementById('modalExtra');
+
+  if (tool.title === 'Empathy Map') {
+    modalExtra.innerHTML = `
+      <div class="tool-steps">
+        <h4>Steps to Use</h4>
+        <ol>
+          <li><strong>Define the User:</strong> Identify who you're mapping.</li>
+          <li><strong>Set Up Quadrants:</strong> Says, Thinks, Does, Feels, Pains, Gains.</li>
+          <li><strong>Fill the Map:</strong> Use sticky notes or digital input to capture insights.</li>
+          <li><strong>Synthesize:</strong> Look for patterns or contradictions across quadrants.</li>
+          <li><strong>Apply Insights:</strong> Use findings to guide design and strategy decisions.</li>
+        </ol>
+      </div>
+    `;
+  } else if (tool.title === 'Affinity Diagramming') {
+    modalExtra.innerHTML = `
+      <div class="tool-steps">
+        <h4>Steps to Use</h4>
+        <ol>
+          <li><strong>Gather Ideas:</strong> Collect input from team discussions, interviews, or brainstorming.</li>
+          <li><strong>Write Ideas:</strong> Record each idea on a sticky note or card.</li>
+          <li><strong>Group Similar Ideas:</strong> Sort notes into clusters based on natural relationships.</li>
+          <li><strong>Label Clusters:</strong> Name each group with a theme or insight.</li>
+          <li><strong>Analyze:</strong> Review clusters to discover patterns and implications.</li>
+        </ol>
+      </div>
+    `;
+  } else if (tool.title === '5 Whys') {
+    modalExtra.innerHTML = `
+      <div class="tool-steps">
+        <h4>Steps to Use</h4>
+        <ol>
+          <li><strong>State the Problem:</strong> Clearly define the issue you’re investigating.</li>
+          <li><strong>Ask "Why?":</strong> Ask why the problem occurred.</li>
+          <li><strong>Repeat:</strong> Continue asking "Why?" for each response (ideally 5 times).</li>
+          <li><strong>Identify Root Cause:</strong> Stop when you uncover the fundamental reason.</li>
+          <li><strong>Take Action:</strong> Develop a solution to address the root cause.</li>
+        </ol>
+      </div>
+    `;
+  } else {
+    modalExtra.innerHTML = '';
+  }
+
   document.getElementById('toolModal').style.display = 'block';
 }
-
 
 document.querySelector('.close-button').onclick = () => {
   document.getElementById('toolModal').style.display = 'none';
@@ -71,14 +110,4 @@ window.onclick = (event) => {
   }
 };
 
-
-    function exportNote(button, title) {
-      const text = button.previousElementSibling.value;
-      const blob = new Blob([text], { type: 'text/plain' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `${title.replace(/\s+/g, '_')}_notes.txt`;
-      a.click();
-    }
-
-    renderCards();
+renderCards();
