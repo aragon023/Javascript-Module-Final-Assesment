@@ -14,9 +14,9 @@ const tools = [
     details: 'Affinity diagramming helps organize ideas, data, and insights by grouping them into meaningful categories or clusters. It’s used to uncover relationships between concepts and is especially useful during brainstorming or synthesis phases.'
   },
   {
-    title: '5 Whys',
-    image: 'images/tools/affinity_diagram.jpg',
-    tags: ['Planning'],
+    title: 'Five Whys',
+    image: 'images/tools/five_whys.jpg',
+    tags: ['Problem Solving'],
     description: 'Explore root causes by asking "why" repeatedly.',
     details: 'The 5 Whys technique is a problem-solving method used to identify the root cause of a problem. By asking "Why?" five times (or more), you uncover deeper insights that help guide corrective action.'
   },
@@ -57,7 +57,7 @@ function showModal(tool) {
   if (tool.title === 'Empathy Map') {
     modalExtra.innerHTML = `
       <div class="tool-steps">
-        <h4>Steps to Use</h4>
+        <h4>How to Use</h4>
         <ol>
           <li><strong>Define the User:</strong> Identify who you're mapping.</li>
           <li><strong>Set Up Quadrants:</strong> Says, Thinks, Does, Feels, Pains, Gains.</li>
@@ -70,7 +70,7 @@ function showModal(tool) {
   } else if (tool.title === 'Affinity Diagramming') {
     modalExtra.innerHTML = `
       <div class="tool-steps">
-        <h4>Steps to Use</h4>
+        <h4>How to Use</h4>
         <ol>
           <li><strong>Gather Ideas:</strong> Collect input from team discussions, interviews, or brainstorming.</li>
           <li><strong>Write Ideas:</strong> Record each idea on a sticky note or card.</li>
@@ -80,10 +80,10 @@ function showModal(tool) {
         </ol>
       </div>
     `;
-  } else if (tool.title === '5 Whys') {
+  } else if (tool.title === 'Five Whys') {
     modalExtra.innerHTML = `
       <div class="tool-steps">
-        <h4>Steps to Use</h4>
+        <h4>How to Use</h4>
         <ol>
           <li><strong>State the Problem:</strong> Clearly define the issue you’re investigating.</li>
           <li><strong>Ask "Why?":</strong> Ask why the problem occurred.</li>
