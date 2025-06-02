@@ -48,12 +48,10 @@
   color:var(--color-blue);
 }
 
-.tools p {
-  font-size: 1.125rem;
+.intro-tools p {
+  font-size: 1rem;
   color: var(--color-grey-medium);
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /* Tools Grid */
