@@ -64,7 +64,7 @@
 }
 
 .project-card {
-  background-color: var(--color-grey-medium);
+  background-color: var(--color-dark-blue);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 12px;
   overflow: hidden;
@@ -85,15 +85,15 @@
   gap: 0.75rem;
 }
 
-.project-content h3 {
+.project-content h4 {
   margin: 0;
   font-size: 1.25rem;
-  color: var(--color-white);
+  color: var(--color-yellow-light);
 }
 
 .tag {
-  font-size: 0.75rem;
-  background-color: var(--color-yellow-light);
+  font-size: 0.5rem;
+  background-color: var(--color-blue-light);
   color: var(--color-grey-dark);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
