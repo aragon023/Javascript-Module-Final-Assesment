@@ -66,6 +66,8 @@ header {
   width: 100%;
   box-sizing: border-box; 
   height: 80px;
+  position: relative;
+  z-index: 1000;
 }
 
 nav ul {
