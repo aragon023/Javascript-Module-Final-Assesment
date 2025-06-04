@@ -1,0 +1,59 @@
+
+.hero-section {
+  background: var(--color-white);
+  color: var(--color-blue);
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.contact-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--color-blue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.contact-section h1 {
+  color: var(--color-blue);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  color: var(--color-white);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-grey-dark);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem;
+  border: 1px solid var(--color-blue-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+  height: 1rem;
+}
