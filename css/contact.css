@@ -28,8 +28,17 @@
   margin-bottom: 2rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
 form .form-group {
+  width: 100%;
+  max-width: 400px;
   margin-bottom: 1.5rem;
+  text-align: left; 
 }
 
 form label {
@@ -37,21 +46,41 @@ form label {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-grey-dark);
+  text-align: left; 
 }
 
 form input,
 form textarea {
   width: 100%;
-  max-width: 600px;
   padding: 0.75rem;
-  border: 1px solid var(--color-blue-light);
+  border: 1px solid var(--color-grey-light);
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
+  text-align: left; 
 }
 
+.cta-btn.form-submit {
+  background-color: var(--color-grey-dark); 
+  color: var(--color-white);           
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn.form-submit:hover {
+  background-color: var(--color-yellow-light);
+  color: var(--color-white); 
+}
+
+
 .error-message {
-  color: red;
+  color: var(--color-orange);
   font-size: 0.85rem;
   margin-top: 0.25rem;
   display: block;
