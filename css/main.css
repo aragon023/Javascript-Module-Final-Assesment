@@ -104,7 +104,7 @@ nav ul {
 
 
 /* Navigation CTA*/
-.cta-btn {
+.nav-cta-btn {
   display: inline-block;
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -116,7 +116,7 @@ nav ul {
   transition: background-color 0.3s ease;
 }
 
-.cta-btn:hover {
+.nav-cta-btn:hover {
 background-color: var(--color-yellow-light); 
 }
 
