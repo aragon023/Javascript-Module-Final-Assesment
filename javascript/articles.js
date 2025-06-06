@@ -4,14 +4,14 @@ const articles = [
     tag: "TECHNOLOGY",
     title: "10 Best AI tools for creative work",
     summary: "AI is redefining how professionals across departments think, plan, and execute creative work. Get to know some of the most innovative AI-powered tools that support creativity, strategic thinking, and productivity across marketing, HR, operations, sales, and more.",
-    link: "articles/article-3.html"
+    link: "articles/article-2.html"
   },
    {
     image: "images/home/articles/article_2_people_office.jpg",
     tag: "STRATEGY",
     title: "Account Based Marketing: Time for a strategic approach",
     summary: "Account-Based Marketing (ABM) flips the traditional marketing funnel by focusing on high-value accounts instead of individual leads. This article explores how ABM aligns marketing and sales for targeted growth, builds stronger relationships, and leverages CRM systems to personalize campaigns at scale.",
-    link: "articles/article-2.html"
+    link: "articles/article-3.html"
   },
 
     {
