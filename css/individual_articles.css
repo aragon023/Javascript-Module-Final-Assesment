@@ -1,7 +1,7 @@
 .article-page {
   background-color: var(--color-white);
   padding: 60px 20px;
-  max-width: 800px;
+  max-width: 1400px;
   margin: auto;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -9,6 +9,7 @@
 
 .article-content {
   color: var(--color-black);
+   padding: 20px 50px;
 }
 
 .article-hero {
