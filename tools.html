@@ -27,111 +27,108 @@
         <script src="./javascript/navigation.js" defer></script>
         <script src="./javascript/tools.js" defer></script>
 </head>
-   <body>
-        <div class="body-container">
-            <!-- Navigation -->
-            <header>
-              <div class="nav-container">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="./images/holisk_logo_negative.webp" alt="Holisk Logo">
-                  </a>
-                </div>
+  <body>
+    <div class="body-container">
+      <!-- Navigation -->
+      <header>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/holisk_logo_negative.webp" alt="Holisk Logo">
+            </a>
+          </div>
 
-               <nav>
-                  <ul class="nav-links">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                  </ul>
-                </nav>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="tools.html">Tools</a></li>
+            </ul>
+          </nav>
 
-                 <a href="contact.html" class="nav-cta-btn">Get in touch</a>
-                
+          <a href="contact.html" class="nav-cta-btn">Get in touch</a>
 
-                <!-- Hamburger Menu -->
-                <div class="hamburger">
-                  <span class = "bar"></span>
-                  <span class = "bar"></span>
-                  <span class = "bar"></span>
-                </div>
-              </div>
-          </header>
+          <!-- Hamburger Menu -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </header>
 
-    <!-- Banner Section -->
-     <section class="banner">
-  <img src="./images/home/toolkit.jpg" alt="Banner Image">
-</section>
+      <!-- Banner Section -->
+      <section class="banner">
+    <img src="./images/home/toolkit.jpg" alt="Banner Image">
+  </section>
 
-  <!-- Intro Tools -->
-<section class="intro-tools">
-    <h1>
-     <span class="material-symbols-outlined icon tools">build</span>
-      Toolkit
-    </h1>
-  <p>
-    Welcome to my curated collection of interactive digital cards designed to support creative thinking, problem solving, and strategic exploration. 
-    Each card features a practical framework drawn from the fields of innovation, business, and design—ranging from classic models to contemporary methods.
-    Whether you're brainstorming new ideas, mapping out customer journeys, or refining business strategies, these tools provide a structured approach to help you tackle challenges from different angles and unlock new possibilities.
-  </p>
-  <p>
-     This space is meant to be hands-on and adaptable.
-      The cards are not just informative—they're built to be applied directly to your work, allowing you to engage with each method dynamically. 
-      From design thinking canvases to business model tools, the Toolkit serves as a practical resource for individuals and teams looking to approach problems more holistically, creatively, and effectively.
-  </p>
-</section>
+      <!-- Intro Tools -->
+    <section class="intro-tools">
+        <h1>
+        <span class="material-symbols-outlined icon tools">build</span>
+          Toolkit
+        </h1>
+      <p>
+        Welcome to my curated collection of interactive digital cards designed to support creative thinking, problem solving, and strategic exploration. 
+        Each card features a practical framework drawn from the fields of innovation, business, and design—ranging from classic models to contemporary methods.
+        Whether you're brainstorming new ideas, mapping out customer journeys, or refining business strategies, these tools provide a structured approach to help you tackle challenges from different angles and unlock new possibilities.
+      </p>
+      <p>
+        This space is meant to be hands-on and adaptable.
+          The cards are not just informative—they're built to be applied directly to your work, allowing you to engage with each method dynamically. 
+          From design thinking canvases to business model tools, the Toolkit serves as a practical resource for individuals and teams looking to approach problems more holistically, creatively, and effectively.
+      </p>
+    </section>
 
-  <!-- Tools Grid -->
-  <div class="tools-container">
-  <div class="filter-bar">
-    <button onclick="filterCards('All')">All</button>
-    <button onclick="filterCards('Empathy')">Empathy</button>
-    <button onclick="filterCards('Strategy')">Strategy</button>
-    <button onclick="filterCards('Planning')">Planning</button>
-    <button onclick="filterCards('Problem Solving')">Problem Solving</button>
-  </div>
-
-  <div class="grid" id="toolGrid"></div>
-
-  <!-- Modal -->
-<div id="toolModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <img id="modalImage" src="" alt="" />
-    <h2 id="modalTitle"></h2>
-    <p id="modalDescription"></p>
-    <div id="modalTags"></div>
-    <div id="modalExtra"></div> <!-- Dynamic content -->
-  </div>
-</div>
-
- </div>
-   <!-- Footer -->
-  <footer class="footer">
-      <div class="footer-logo">
-                  <a href="index.html">
-                    <img src="./images/holisk_logo_negative.webp" alt="Holisk Logo">
-                  </a>
+      <!-- Tools Grid -->
+      <div class="tools-container">
+      <div class="filter-bar">
+        <button onclick="filterCards('All')">All</button>
+        <button onclick="filterCards('Empathy')">Empathy</button>
+        <button onclick="filterCards('Strategy')">Strategy</button>
+        <button onclick="filterCards('Planning')">Planning</button>
+        <button onclick="filterCards('Problem Solving')">Problem Solving</button>
       </div>
-    <div class="footer-links">
-      <ul>
-        <li><a href="/index.html">About Me</a></li>
-        <li><a href="/articles.html">Articles</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="/tools.html">Tools</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
+
+      <div class="grid" id="toolGrid"></div>
+
+      <!-- Modal -->
+      <div id="toolModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <img id="modalImage" src="" alt="" />
+          <h2 id="modalTitle"></h2>
+          <p id="modalDescription"></p>
+          <div id="modalTags"></div>
+          <div id="modalExtra"></div> <!-- Dynamic content -->
+        </div>
+      </div>
     </div>
-    <div class="footer-contact">
-      <p>contact@holisk.com</p>
+    
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="./images/holisk_logo_negative.webp" alt="Holisk Logo">
+          </a>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="/index.html">About Me</a></li>
+            <li><a href="/articles.html">Articles</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/tools.html">Tools</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <p>contact@holisk.com</p>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2025 All Rights Reserved</p>
+        </div>
+      </footer>
     </div>
-    <div class="footer-legal">
-      <p>&copy; 2025 All Rights Reserved</p>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Condition</a>
-    </div>
-  </footer>
-  </div>
-</body>
+  </body>
 </html>
