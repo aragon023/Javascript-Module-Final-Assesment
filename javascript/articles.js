@@ -1,6 +1,6 @@
 const articles = [
   {
-    image: "images/home/articles/article_3_AI_Tools",
+    image: "images/home/articles/article_3_AI_Tools.jpg",
     tag: "TECHNOLOGY",
     title: "10 Best AI tools for creative work",
     summary: "AI is redefining how professionals across departments think, plan, and execute creative work. Get to know some of the most innovative AI-powered tools that support creativity, strategic thinking, and productivity across marketing, HR, operations, sales, and more.",
