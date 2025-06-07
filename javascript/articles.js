@@ -1,6 +1,6 @@
 const articles = [
   {
-    image: "images/home/articles/article_3_AI_tools.jpg",
+    image: "images/home/articles/article_3_AI_Tools",
     tag: "TECHNOLOGY",
     title: "10 Best AI tools for creative work",
     summary: "AI is redefining how professionals across departments think, plan, and execute creative work. Get to know some of the most innovative AI-powered tools that support creativity, strategic thinking, and productivity across marketing, HR, operations, sales, and more.",
@@ -19,7 +19,7 @@ const articles = [
     tag: "INNOVATION",
     title: "Unlocking Growth: Applying the 10 Types of Innovation Across Industries",
     summary: "The Ten Types of Innovation framework by Doblin offers a holistic approach to innovation by identifying ten areas where companies can differentiate and create value—not just through products, but also through processes, business models, customer engagement, and more.",
-     link: "articles/article-1.html"
+    link: "articles/article-1.html"
   }
 ];
 
