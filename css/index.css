@@ -115,6 +115,7 @@
 }
 
 
+
 /* Projects */
 .projects {
   background-color: var(--color-white);
@@ -134,7 +135,7 @@
 .projects-grid {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .project-card {

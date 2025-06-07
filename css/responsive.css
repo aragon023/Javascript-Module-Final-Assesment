@@ -3,9 +3,22 @@
 
 /* --- Responsive Styles --- */
 
-/* Media Query ≤ 860px */
-@media (max-width: 860px) {
-  .hamburger {
+
+/* Media Query ≤ 960px */
+@media (max-width: 960px) {
+
+
+ .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+/* Media Query ≤ 760px */
+@media (max-width: 760px) {
+
+.hamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,15 +64,7 @@
     text-align: center;
     padding: 1rem 0;
   }
-}
 
-/* Media Query ≤ 600px */
-@media (max-width: 600px) {
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 1rem;
-  }
 
   .intro,
   .about,
@@ -67,7 +72,11 @@
   .tools {
     padding: 2rem 1rem;
   }
-/*Contact Section */
+
+       .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
 
     .contact-section {
     padding: 0.5rem;
@@ -94,11 +103,10 @@ form textarea {
   margin: 0 auto;
 }
 
-
 }
 
-/* ≤ 400px: Ultra-thin screen tweaks */
-@media (max-width: 400px) {
+/* ≤ 320px: Ultra-thin screen tweaks */
+@media (max-width: 320px) {
   body {
     font-size: 0.95rem;
   }
@@ -116,6 +124,12 @@ form textarea {
     font-size: 0.9rem;
   }
 
+
+     .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
   .project-description {
     font-size: 0.85rem;
   }
@@ -124,57 +138,10 @@ form textarea {
     max-height: 180px;
   }
 
-  /*Contact Section */
 form input,
 form textarea {
   max-width: 300px;
 }
 
 }
-
-
-
-
-
-
-
-/*@media (max-width: 860px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 90px;
-    right: 0;
-    background-color:rgba(0, 0, 0, 0.8);
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  nav ul li {
-    text-align: center;
-    padding: 10px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  
-  
-  .cta-btn {
-    display: none;
-  }
-
-  .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-}
-
 
