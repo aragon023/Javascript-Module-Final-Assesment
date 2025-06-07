@@ -1,5 +1,144 @@
-/* Responsive Styles */
+
+
+
+/* --- Responsive Styles --- */
+
+/* Media Query ≤ 860px */
 @media (max-width: 860px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+    margin: 3px 0;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
+/* Media Query ≤ 600px */
+@media (max-width: 600px) {
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 1rem;
+  }
+
+  .intro,
+  .about,
+  .projects,
+  .tools {
+    padding: 2rem 1rem;
+  }
+/*Contact Section */
+
+    .contact-section {
+    padding: 0.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .contact-description {
+    font-size: 0.95rem;
+  }
+
+ form {
+    align-items: center;
+  }
+
+  form .form-group {
+    max-width: 100%;
+    text-align:center;
+  }
+
+  form input,
+form textarea {
+  max-width: 300px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+
+}
+
+/* ≤ 400px: Ultra-thin screen tweaks */
+@media (max-width: 400px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+  }
+
+  .nav-links {
+    font-size: 0.9rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .tools-image img {
+    max-height: 180px;
+  }
+
+  /*Contact Section */
+form input,
+form textarea {
+  max-width: 300px;
+}
+
+}
+
+
+
+
+
+
+
+/*@media (max-width: 860px) {
   .hamburger {
     display: flex;
   }
@@ -37,3 +176,5 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 }
+
+
